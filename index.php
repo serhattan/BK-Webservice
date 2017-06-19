@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 	exit(0);
 }
 
-$action = "kitaplarim";
+$action = "get";
 if (isset($_GET['a'])) {
 	if (method_exists('MainController', $_GET['a'])){
 		$action = $_GET['a'];
